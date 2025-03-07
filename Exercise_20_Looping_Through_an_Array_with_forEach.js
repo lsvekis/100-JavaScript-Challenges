@@ -1,0 +1,1 @@
+colors.forEach(color => console.log("Color:", color));
