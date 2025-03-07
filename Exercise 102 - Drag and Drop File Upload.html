@@ -1,0 +1,9 @@
+<div id="dropzone">Drop files here</div>
+<script>
+const dropzone = document.getElementById('dropzone');
+dropzone.addEventListener('dragover', e => e.preventDefault());
+dropzone.addEventListener('drop', e => {
+  e.preventDefault();
+  console.log(e.dataTransfer.files);
+});
+</script>

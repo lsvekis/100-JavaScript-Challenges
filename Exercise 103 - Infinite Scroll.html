@@ -1,0 +1,8 @@
+<div id="scrollContainer"></div>
+<script>
+window.addEventListener('scroll', () => {
+  if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
+    document.getElementById('scrollContainer').innerHTML += '<p>More content loaded...</p>';
+  }
+});
+</script>

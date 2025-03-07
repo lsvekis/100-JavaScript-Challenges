@@ -1,0 +1,2 @@
+window.onpopstate=()=>document.getElementById('view').textContent=location.pathname;
+document.querySelectorAll('a').forEach(l=>l.onclick=e=>{e.preventDefault();history.pushState(null,'',l.href);window.onpopstate();});
